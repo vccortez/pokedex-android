@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="colorVeneno">#673AB7</color>
+    <color name="colorAgua">#2196F3</color>
+    <color name="colorPsiquico">#DE32EC</color>
+    <color name="colorEletrico">#FFEB3B</color>
+    <color name="colorFogo">#F44336</color>
+    <color name="colorFolha">#4CAF50</color>
+    <color name="colorNormal">#C4C0CF</color>
+    <color name="colorFada">#FFADED</color>
+</resources>

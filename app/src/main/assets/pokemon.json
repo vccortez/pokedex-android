@@ -1,0 +1,116 @@
+{
+  "pokemon": [
+    {
+      "number": 1,
+      "name": "Bulbasaur",
+      "species": "Pokémon semente",
+      "image": "https://img.pokemondb.net/sprites/sun-moon/icon/bulbasaur.png",
+      "url": "https://pokemondb.net/pokedex/bulbasaur",
+      "entry": "Durante algum tempo após o seu nascimento, ele cresce ganhando alimento da semente no seu dorso.",
+      "type": [
+        "folha",
+        "venenoso"
+      ]
+    },
+    {
+      "number": 4,
+      "name": "Charmander",
+      "species": "Pokémon lagarto",
+      "image": "https://img.pokemondb.net/sprites/sun-moon/icon/charmander.png",
+      "url": "https://pokemondb.net/pokedex/charmander",
+      "entry": "O fogo na ponta da sua cauda é uma medida da sua vida. Se for saudável, sua cauda queima intensamente.",
+      "type": [
+        "fogo"
+      ]
+    },
+    {
+      "number": 7,
+      "name": "Squirtle",
+      "species": "Pokémon tartaruga",
+      "image": "https://img.pokemondb.net/sprites/sun-moon/icon/squirtle.png",
+      "url": "https://pokemondb.net/pokedex/squirtle",
+      "entry": "Abriga-se na sua concha e depois contra-ataca com jatos de água em todas as oportunidades.",
+      "type": [
+        "água"
+      ]
+    },
+    {
+      "number": 25,
+      "name": "Pikachu",
+      "species": "Pokémon rato",
+      "image": "https://img.pokemondb.net/sprites/sun-moon/icon/pikachu.png",
+      "url": "https://pokemondb.net/pokedex/pikachu",
+      "entry": "Utiliza ocasionalmente um choque eléctrico para recarregar um companheiro Pikachu que está num estado enfraquecido.",
+      "type": [
+        "elétrico"
+      ]
+    },
+    {
+      "number": 52,
+      "name": "Meowth",
+      "species": "Pokémon gato arranhador",
+      "image": "https://img.pokemondb.net/sprites/sun-moon/icon/meowth.png",
+      "url": "https://pokemondb.net/pokedex/meowth",
+      "entry": "É noturno na natureza. Se ele avista algo brilhante, seus olhos cintilam brilhantemente.",
+      "type": [
+        "normal"
+      ]
+    },
+    {
+      "number": 122,
+      "name": "Mr. Mime",
+      "species": "Pokémon barreira",
+      "image": "https://img.pokemondb.net/sprites/sun-moon/icon/mr-mime.png",
+      "url": "https://pokemondb.net/pokedex/mr-mime",
+      "entry": "Forma uma parede invisível no ar ao vibrar minuciosamente as pontas dos dedos para parar as moléculas no ar.",
+      "type": [
+        "psíquico",
+        "fada"
+      ]
+    },
+    {
+      "number": 129,
+      "name": "Magikarp",
+      "species": "Pokémon peixe",
+      "image": "https://img.pokemondb.net/sprites/sun-moon/icon/magikarp.png",
+      "url": "https://pokemondb.net/pokedex/magikarp",
+      "entry": "Um Magikarp que vive há muitos anos pode saltar uma montanha usando Splash. No entanto, o ataque continua inútil.",
+      "type": [
+        "água"
+      ]
+    },
+    {
+      "number": 143,
+      "name": "Snorlax",
+      "species": "Pokémon dorminhoco",
+      "image": "https://img.pokemondb.net/sprites/sun-moon/icon/snorlax.png",
+      "url": "https://pokemondb.net/pokedex/snorlax",
+      "entry": "Quando a barriga está cheia, torna-se muito letárgico para levantar um dedo, por isso é seguro pular na sua barriga.",
+      "type": [
+        "normal"
+      ]
+    },
+    {
+      "number": 151,
+      "name": "Mew",
+      "species": "Nova espécie",
+      "image": "https://img.pokemondb.net/sprites/sun-moon/icon/mew.png",
+      "url": "https://pokemondb.net/pokedex/mew",
+      "entry": "Por ser capaz de usar todos os tipos de movimentos, muitos cientistas acreditam que o Mew é o ancestral dos Pokémon.",
+      "type": [
+        "psíquico"
+      ]
+    },
+    {
+      "number": 150,
+      "name": "Mewtwo",
+      "species": "Pokémon genético",
+      "image": "https://img.pokemondb.net/sprites/sun-moon/icon/mewtwo.png",
+      "url": "https://pokemondb.net/pokedex/mewtwo",
+      "entry": "Um Pokémon criado pela recombinação dos genes do Mew. Diz-se que tem o coração mais selvagem entre os Pokémon.",
+      "type": [
+        "psíquico"
+      ]
+    }
+  ]
+}
