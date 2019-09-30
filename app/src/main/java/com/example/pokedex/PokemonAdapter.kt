@@ -40,13 +40,14 @@ class PokemonAdapter(private val context: Context, private val dataSource: Array
             view = inflater.inflate(R.layout.pokemon_list_item, parent, false)
 
             // 3
-            holder = ViewHolder()
-            holder.thumbnailImageView = view.findViewById(R.id.pokemon_item_thumbnail) as ImageView
-            holder.titleTextView = view.findViewById(R.id.pokemon_item_title) as TextView
-            holder.numberTextView = view.findViewById(R.id.pokemon_item_number) as TextView
-            holder.subtitleTextView = view.findViewById(R.id.pokemon_item_subtitle) as TextView
-            holder.detail1TextView = view.findViewById(R.id.pokemon_item_detail1) as TextView
-            holder.detail2TextView = view.findViewById(R.id.pokemon_item_detail2) as TextView
+            holder = ViewHolder().apply {
+                thumbnailImageView = view.findViewById(R.id.pokemon_item_thumbnail) as ImageView
+                titleTextView = view.findViewById(R.id.pokemon_item_title) as TextView
+                numberTextView = view.findViewById(R.id.pokemon_item_number) as TextView
+                subtitleTextView = view.findViewById(R.id.pokemon_item_subtitle) as TextView
+                detail1TextView = view.findViewById(R.id.pokemon_item_detail1) as TextView
+                detail2TextView = view.findViewById(R.id.pokemon_item_detail2) as TextView
+            }
 
             // 4
             view.tag = holder
@@ -57,38 +58,33 @@ class PokemonAdapter(private val context: Context, private val dataSource: Array
         }
 
         // 6
-        val titleTextView = holder.titleTextView
-        val subtitleTextView = holder.subtitleTextView
-        val numberTextView = holder.numberTextView
-        val detail1TextView = holder.detail1TextView
-        val detail2TextView = holder.detail2TextView
-        val thumbnailImageView = holder.thumbnailImageView
+        val pokemon = dataSource[position]
 
-        val pokemon = getItem(position) as Pokemon
+        with(holder) {
+            titleTextView.text = pokemon.name
+            numberTextView.text = pokemon.number.toString()
+            subtitleTextView.text = pokemon.entry
+            detail1TextView.text = pokemon.type[0]
+            detail2TextView.text = pokemon.type.getOrElse(1) { "" }
 
-        titleTextView.text = pokemon.name
-        numberTextView.text = pokemon.number.toString()
-        subtitleTextView.text = pokemon.entry
-        detail1TextView.text = pokemon.type[0]
-        detail2TextView.text = pokemon.type.getOrElse(1) { "" }
+            Picasso.with(context).load(pokemon.imageUrl).placeholder(R.mipmap.ic_launcher)
+                .into(thumbnailImageView)
 
-        Picasso.with(context).load(pokemon.imageUrl).placeholder(R.mipmap.ic_launcher)
-            .into(thumbnailImageView)
-
-        detail1TextView.setTextColor(
-            ContextCompat.getColor(
-                context,
-                LABEL_COLORS[pokemon.type[0]] ?: R.color.colorNormal
-            )
-        )
-
-        if (pokemon.type.size > 1) {
-            detail2TextView.setTextColor(
+            detail1TextView.setTextColor(
                 ContextCompat.getColor(
                     context,
-                    LABEL_COLORS[pokemon.type[1]] ?: R.color.colorNormal
+                    LABEL_COLORS[pokemon.type[0]] ?: R.color.colorNormal
                 )
             )
+
+            if (pokemon.type.size > 1) {
+                detail2TextView.setTextColor(
+                    ContextCompat.getColor(
+                        context,
+                        LABEL_COLORS[pokemon.type[1]] ?: R.color.colorNormal
+                    )
+                )
+            }
         }
 
         return view
